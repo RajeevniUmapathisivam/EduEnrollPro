@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER (LOGO LEFT)
+========================= */
+/* =========================
+   HEADER (CENTERED)
+========================= */
+.home-header {
+  display: flex;
+  flex-direction: column;   /* stack logo + name */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* BIGGER LOGO */
+.home-header-logo {
+  width: 90px;   /* increased size */
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* BIGGER SYSTEM NAME */
+.system-name {
+  font-size: 2rem;   /* bigger text */
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* =========================
+   CONTENT CENTER
+========================= */
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TITLE */
+.home-title {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.home-subtext {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.home-button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.home-button:hover {
+  background: #1e40af;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.home-footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .home-header {
+    padding: 15px;
+  }
+
+  .system-name {
+    font-size: 1.1rem;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .home-subtext {
+    font-size: 0.95rem;
+  }
+
+  .home-button {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}
