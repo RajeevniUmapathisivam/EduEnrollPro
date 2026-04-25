@@ -37,3 +37,4 @@ EduEnrollPro/
 ___ frontend/
 ___ backend/
 ___ screenshots/
+___ README.md
